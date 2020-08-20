@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<center>
+<head>
+<title>
+アカウント登録失敗画面
+</title>
+</head>
+
+<body>
+<p>
+アカウント登録に失敗しました
+</p>
+<p>
+アカウント登録に戻る
+<a href="">
+</a>
+</p>
+</body>
+</center>
+</html>
