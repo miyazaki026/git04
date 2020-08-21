@@ -38,4 +38,4 @@ HTML
 ・https://www.kanzaki.com/docs/html/htminfo31.html　基本的なフォーム――ごく簡単なHTMLの解説
 
 Javascript
-・
+・https://www.javadrive.jp/javascript/  JavaScript入門|基本構文の解説とクラス/関数リファレンス
