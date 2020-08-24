@@ -7,13 +7,18 @@
   <!--CSS-->
 
   <style>
-    p{
-     margin-left:40%
-     }
     body{
 	margin-top: 100px;
+	text-align: center;
         }
+    #button{
+	margin-top:20px;
+    	width: 80px;
+	height: 30px;
+    }
   </style>
+
+<script type="text/javascript" src="./changeRegist.js"></script>
 
 </head>
 <body>
@@ -21,17 +26,10 @@
 	<p><label>ユーザー名：　　　<input type="text" name="username" size="25"></label></p>
 	<p><label>現在のパスワード：<input type="text" name="name" size="25"></label></p>
 	<p><label>変更後パスワード：<input type="text" pass="userid" size="25"></label></p>
-<<<<<<< HEAD
 	<p><label>メールアドレス：　<input type="text" name="mail" size="25"></label></p>
-=======
-	<p><label>メールアドレス：<input type="text" name="mail" size="25"></label></p>
-
 <div>
->>>>>>> master
-<p>
-※必要事項が記入されてません
-</p>
-<p><input type="submit" value="変更"></p>
+
+<p><input id="button" type="submit" value="変更" onClick="check()"></p>
 </div>
 </form>
 </body>
