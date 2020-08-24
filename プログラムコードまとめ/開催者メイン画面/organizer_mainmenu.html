@@ -40,11 +40,16 @@ width: 70px;
 float: left;
 }
 </style>
+<script type="text/javascript"
+src="./logout.js">
+</script>
+
 </head>
 <body>
 <p><div class="block">アバタ<br>ー画像</div></p>
 <p id="left1">ユーザー名</p>
-<p id="right1"><a href="リンク先のURL" title="ログアウトし、スタート画面へ戻る時に選択してください。">ログアウト</a></p>
+<p id="right1"><a href="リンク先のURL" onClick="logout_check(); return false;"
+title="ログアウトし、スタート画面へ戻る時に選択してください。">ログアウト</a></p>
 <form method="post" action="--空欄--">
 <p id="center1"><input type="submit" value="説明会に参加する"
 title="開催している説明会に参加する時に選択してください。" style="width: 197px; height: 100px">
