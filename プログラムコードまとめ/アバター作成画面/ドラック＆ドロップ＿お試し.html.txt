@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE>
+<html>
+<head>
+<title>おためし</title>
+<meta charset="UTF-8">
+<style>
+body{
+  text-align: center;
+}
+</style>
+<script type="text/javascript" src="C:\Users\kensyu\Desktop\javascript_code/window_close.js">
+</script>
+</head>
+
+<body><br><br>
+<div draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'この文字列はドラッグができます')">
+  この文字列はドラッグが<strong>できます</strong>。
+</div>
+<h3>ログアウトしました</h3>
+<p><a href="URL" title="ログイン画面に移動する際に選択してください。"
+>ログイン画面に戻る</a></p>
+
+<div ondragover="return false">
+</div>
+</body>
+</html>

@@ -30,9 +30,24 @@
 	display: inline-block;
 	vertical-align: top;
     }
-    button{
-	width: 200px;
-	height: 50px;
+    .chat{
+	border:solid 1px black;
+	width:200px;
+	height:350px;
+	background:white;
+    }
+    .link_button{
+	margin-top:80px;
+	text-decoration:none;
+	color:black;
+	background:white;
+	border:solid 1px black;
+	padding: 15px 40px;
+	border-radius:10px;
+    }
+
+    .link_button:hover{
+	background:lightgray;
     }
     
     
@@ -49,10 +64,8 @@
 
 
   <div class="right">
-  	<form action=" ">
-		<p><textarea name="chat" rows="30"></textarea ></p>
-		<button onclick="location.href=' '">退出する</button>
-  	</form>
+		<p class="chat"></p>
+		<a href="briefing_session_selection.html" class="link_button">退出する</a>
 	
   </div>
 
