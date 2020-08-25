@@ -11,3 +11,17 @@ function check(){
     return false;
   }
 }
+
+function newcheck(){
+  ret = confirm("新規登録を行いますか？");
+  if (ret == true){
+    alert("アカウント登録画面に移動します。");
+  }
+}
+
+function passcheck(){
+  ret = confirm("パスワードを確認しますか？");
+  if (ret == true){
+    alert("パスワード再設定画面に移動します。");
+  }
+}
