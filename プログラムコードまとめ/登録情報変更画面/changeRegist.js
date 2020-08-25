@@ -9,11 +9,19 @@ function check(){
 				alert("更新が完了しました。");
   			}
 		}
-        }else{
+        }else if(changeForm.nowpass.value == "" && changeForm.newpass.value == ""){
 		ret = confirm("登録情報を変更します。よろしいですか？");
 		if (ret == true){
 			alert("更新が完了しました。");
   		}
+	}else if(changeForm.nowpass.value != "" && changeForm.newpass.value != ""){
+		ret = confirm("登録情報を変更します。よろしいですか？");
+		if (ret == true){
+			alert("更新が完了しました。");
+  		}
+	}else{
+		alert("必要項目が入力されていません。");
+		return false;
 	}
 
 }
