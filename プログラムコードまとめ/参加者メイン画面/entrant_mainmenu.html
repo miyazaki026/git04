@@ -40,22 +40,24 @@ width: 70px;
 float: left;
 }
 </style>
-<script type="text/javascript" src="./logout.js">
-</script>
+<script type="text/javascript" src="./logout.js"></script>
+<script src="./joincheck.js"></script>
+<script src="Jump.js"></script>
 </head>
 <body>
 <p><div class="block">アバタ<br>ー画像</div></p>
 <p id="left1">ユーザー名</p>
 <p id="right1"><a href="リンク先のURL" title="ログアウトし、スタート画面に戻る時に選択してください。"
-onClick="check()" >ログアウト</a></p>
-<form method="post" action="--空欄--">
-<p id="center1"><input type="submit" value="説明会に参加する"
+onClick="check(); return false;" >ログアウト</a></p>
+<form action=" " name="mainmenu">
+<p id="center1"><input type="submit" value="説明会に参加する" onClick="boothjoincheck()"
 title="開催している説明会に参加するときに選択してください。" style="width: 400px; height: 100px"></p>
-<p id="center2"><input type="submit" value="音声機器設定"
+<p id="center2"><input type="submit" value="音声機器設定" onClick="musicjoincheck()"
 title="音声機器設定を行うときに選択してください。" style="width: 400px; height: 40px"></p>
-<p id="center3"><input type="submit" value="アカウント情報変更"
+<p id="center3"><input type="submit" value="アカウント情報変更" onClick="accountjoincheck()"
 title="アカウント情報を変更するときに選択してください。" style="width: 400px; height: 40px"></p>
 </form>
-<p id="right2"><a href="リンク先のURL" title="開催者用メインメニューへ切り替える時に選択してください。">開催者の方はこちら</a></p>
+<p id="right2"><a href="リンク先のURL" onClick="Jump(); return false;"
+title="開催者用メインメニューへ切り替える時に選択してください。">開催者の方はこちら</a></p>
 </body>
 </html>
