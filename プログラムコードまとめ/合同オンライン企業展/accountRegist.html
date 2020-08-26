@@ -7,19 +7,20 @@
   <!--CSS-->
 
   <style>
-    p{
-     text-align: center;
-     }
     body{
 	margin-top: 100px;
-        }
+	text-align: center;
+    }
     .check{
 	margin-top: 30px;
-	}
+　　}
     input.submit_button{
 	width: 100px;
 	height: 30px;
-	}
+　　}
+    a{
+	margin-left: 500px;
+    }
 
   </style>
 
@@ -29,7 +30,7 @@
 
 </head>
 <body>
-  <form action=" " name="registForm">
+  <form action="login_screen.html" name="registForm">
 	<p><label>ユーザーID：　　<input type="text" name="userid" size="25"></label></p>
 	<p><label>ユーザー名：　　<input type="text" name="username" size="25"></label></p>
 	<p><label>氏名：　　　　　<input type="text" name="name" size="25"></label></p>
@@ -42,5 +43,8 @@
 		onClick="return confirm('入力内容をリセットします。よろしいですか？')">
 	</p>
   </form>
+
+  <a href=login_screen.html>ログイン画面へ</a>
+
 </body>
 </html>
