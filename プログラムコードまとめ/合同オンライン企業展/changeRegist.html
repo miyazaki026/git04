@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>登録情報変更画面</title>
+
+  <!--CSS-->
+
+  <style>
+    body{
+	margin-top: 100px;
+	text-align: center;
+        }
+    #button{
+	margin-top:20px;
+    	width: 80px;
+	height: 30px;
+    }
+  </style>
+
+<script type="text/javascript" src="./changeRegist.js"></script>
+
+</head>
+<body>
+  <form action=" " name="changeForm">
+	<p><label>ユーザー名：　　　<input type="text" name="username" size="25"></label></p>
+	<p><label>現在のパスワード：<input type="password" name="nowpass" size="25"></label></p>
+	<p><label>変更後パスワード：<input type="password" name="newpass" size="25"></label></p>
+	<p><label>メールアドレス：　<input type="text" name="mail" size="25"></label></p>
+<div>
+
+<p><input id="button" type="submit" value="変更" onClick="check()"></p>
+</div>
+</form>
+</body>
+</html>
