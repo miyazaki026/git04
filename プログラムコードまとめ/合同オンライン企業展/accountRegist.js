@@ -24,8 +24,8 @@ function check(){
 
 		ret = confirm("この入力内容で登録します。よろしいですか？");
 		if (ret == true){
-			alert("登録が完了しました。ログイン画面に戻ります。");
-			location.href = "login_screen.html";
+			alert("登録が完了しました。アバター作成画面に移ります。");
+			location.href = "createAvatar.html";
   		}
 
 	}

@@ -9,25 +9,34 @@ function MouseXY() {
 
 //ブース選択確認ダイアログ
 function booth(){
+	event.preventDefault();
 	ret = confirm("この企業の説明会に参加します。よろしいですか？");
 	if (ret == true){
-		location.href = " ";
+		location.href = "booth.html";
+	}else{
+		return false;
 	}
 }
 
 //休憩室選択確認ダイアログ
 function rest(){
+	event.preventDefault();
 	ret = confirm("この休憩スペースに参加します。よろしいですか？");
 	if (ret == true){
-		location.href = " ";
+		location.href = "";
+	}else{
+		return false;
 	}
 }
 
 //メインメニューへ戻る確認ダイアログ
 function mainmenu(){
+	event.preventDefault();
 	ret = confirm("メインメニューへ戻ります。よろしいですか？");
 	if (ret == true){
-		location.href = " ";
+		location.href = "entrant_mainmenu.html";
+	}else{
+		return false;
 	}
 }
 
