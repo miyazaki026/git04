@@ -1,77 +1,95 @@
 <!DOCTYPE>
 <html>
 <head>
-<title>参加者メイン画面</title>
+<title>開催者メイン画面</title>
 <meta charset="UTF-8">
-<!--centerは選択ボタンの配置、rightはリンクの配置、leftはアバター画像とユーザー名の配置-->
+
+<!--centerはフォーム文の配置、rightはリンクの配置、leftはアバターとユーザー名の配置-->
 <style>
-#center1{
-  position: absolute;
-  top:75px;
-  left:100px;
+body{
+text-align:center;
+margin-top:80px;
 }
-#center2{
-  position: absolute;
-  top:180px;
-  left:100px;
+.left{
+  display:inline-block;
+  vertical-align:top;
 }
-#center3{
-  position: absolute;
-  top:225px;
-  left:100px
+.center{
+  display:inline-block;
+  vertical-align:middle;
 }
-#right1{
-  position: absolute;
-  top:5px;
-  left:475px;
+.right1{
+  display:inline-block;
+  vertical-align:top;
+  margin-left:350px;
 }
-#right2{
-  position: absolute;
-  top:300px;
-  left:400px;
+.right2{
+  display:inline-block;
+  vertical-align:bottom;
+  margin-left:450px;
+  margin-top:15px;
 }
-#left1{
-  position: absolute;
-  top:5px;
-  left:90px;
+.button1{
+  width:400px;
+  height:100px;
+  margin-top:30px;
 }
+.button2{
+  width:400px;
+  height:40px;
+  margin-top:5px;
+}
+
 .block{
 background-color: gray;
 width: 70px;
 float: left;
 }
+
 </style>
 
 <!--javascriptの関数-->
 <script type="text/javascript" src="./logout.js"></script>
+<script src="./Jump_entrant.js"></script>
 <script src="./joincheck.js"></script>
-<script src="Jump_entrant.js"></script>
+
 </head>
 <body>
 
 <!--アバター画像とユーザー名-->
-<p><div class="block">アバタ<br>ー画像</div></p>
-<p id="left1">ユーザー名</p>
+<div>
+  <div class="left">
+    <div class="block">アバタ<br>ー画像</div>
+    <a>ユーザー名</a>
+  </div>
+  <div class="right1">
+    <a href="logout_screen.html" onClick="check(); return false;"
+    title="ログアウトし、スタート画面へ戻る時に選択してください。">ログアウト</a>
+  </div>
+</div>
 
 <!--ログアウトのリンク-->
-<p id="right1"><a href="logout_screen.html" title="ログアウトし、スタート画面に戻る時に選択してください。"
-onClick="check(); return false;" >ログアウト</a></p>
 
-<form action="#">
 
-<!--選択ボタン4つの記述-->
-<p id="center1"><button type="submit" formaction="briefing_session_selection.html" onClick="boothjoincheck(); return false;"
-title="開催している説明会に参加する時に選択してください。" style="width: 400px; height: 100px">説明会に参加する</button></p>
-
-<p id="center2"><button type="submit" formaction="音声機器設定画面のURL" onClick="musicjoincheck(); return false;"
-title="音声機器設定を行う時に選択してください。" style="width: 400px; height: 40px">音声機器設定</button></p>
-
-<p id="center3"><button type="submit" formaction="アカウント情報変更画面のURL" onClick="accountjoincheck(); return false;"
-title="アカウント情報を変更する時に選択してください。" style="width: 400px; height: 40px">アカウント情報変更</button></p>
-</form>
-
-<!--開催者メイン画面移動リンク-->
-<p id="right2"><a href="organizer_mainmenu.html" onClick="Jump(); return false;"
-title="開催者用メインメニューへ切り替える時に選択してください。">開催者の方はこちら</a></p>
+<div class="center">
+  <div class="company">
+    <a href="briefing_session_selection.html"><button class="button1" type="button" value="説明会に参加する" 
+    title="開催している説明会に参加する時に選択してください。" onClick="boothjoincheck()">説明会に参加する</button></a>
+  </div>
+  <div class="company">
+    <a href="音声機器設定画面のURL"><button class="button2" type="button" value="音声機器設定" 
+    title="音声機器設定を行う時に選択してください。" onClick="musicjoincheck()">音声機器設定</button></a>
+  </div>
+  <div class="company">
+    <a href="アカウント情報変更画面のURL"><button class="button2" type="button" value="アカウント情報変更" 
+    title="アカウント情報を変更する時に選択してください。" onClick="accountjoincheck()">アカウント情報変更</button></a>
+  </div>
+</div>
+<br>
+<!--参加者メイン画面のリンク-->
+<div class="right2">
+    <a href="organizer_mainmenu.html" onClick="Jump(); return false;"
+    title="開催者用メインメニューに切り替える時に選択してください。">開催者の方はこちら</a>
+</div>
 </body>
 </html>
