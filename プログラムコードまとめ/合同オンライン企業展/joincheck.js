@@ -28,5 +28,6 @@ function accountjoincheck(){
   ret = confirm("アカウント情報変更画面に移動します。よろしいですか？");
   if (ret == true){
     window.alert("アカウント情報変更画面に移動しました。");
+    location.href("changeRegist.html");
   }
 }
