@@ -56,15 +56,18 @@ float: left;
 <!--ログアウトのリンク-->
 <p id="right1"><a href="logout_screen.html" title="ログアウトし、スタート画面に戻る時に選択してください。"
 onClick="check(); return false;" >ログアウト</a></p>
-<form action=" " name="mainmenu">
 
-<!--選択ボタン-->
-<p id="center1"><input type="submit" value="説明会に参加する" onClick="boothjoincheck()"
-title="開催している説明会に参加するときに選択してください。" style="width: 400px; height: 100px"></p>
-<p id="center2"><input type="submit" value="音声機器設定" onClick="musicjoincheck()"
-title="音声機器設定を行うときに選択してください。" style="width: 400px; height: 40px"></p>
-<p id="center3"><input type="submit" value="アカウント情報変更" onClick="accountjoincheck()"
-title="アカウント情報を変更するときに選択してください。" style="width: 400px; height: 40px"></p>
+<form action="#">
+
+<!--選択ボタン4つの記述-->
+<p id="center1"><button type="submit" formaction="briefing_session_selection.html" onClick="boothjoincheck(); return false;"
+title="開催している説明会に参加する時に選択してください。" style="width: 400px; height: 100px">説明会に参加する</button></p>
+
+<p id="center2"><button type="submit" formaction="音声機器設定画面のURL" onClick="musicjoincheck(); return false;"
+title="音声機器設定を行う時に選択してください。" style="width: 400px; height: 40px">音声機器設定</button></p>
+
+<p id="center3"><button type="submit" formaction="アカウント情報変更画面のURL" onClick="accountjoincheck(); return false;"
+title="アカウント情報を変更する時に選択してください。" style="width: 400px; height: 40px">アカウント情報変更</button></p>
 </form>
 
 <!--開催者メイン画面移動リンク-->
