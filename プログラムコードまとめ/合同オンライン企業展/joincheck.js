@@ -3,8 +3,9 @@ function boothjoincheck(){
   ret = confirm("説明会選択画面に移動します。よろしいですか？");
   if (ret == true){
     window.alert("説明会選択画面に移動しました。");
+    location.href("briefing_session_selection.html");
   }else{
-    window.alert("説明会の情報の取得に失敗しました。")
+    window.alert("説明会の情報の取得に失敗しました。");
     return false;
   }
 }
