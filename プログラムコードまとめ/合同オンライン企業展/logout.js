@@ -2,6 +2,7 @@
 function check(){
   ret = confirm("ログアウトします。よろしいですか？");
   if (ret == true){
-    alert("ログアウトしました。")
+    window.alert("ログアウトしました。")
+    location.href("logout_screen.html");
   }
 }
