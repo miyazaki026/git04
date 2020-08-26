@@ -30,3 +30,14 @@ function check(){
 
 	}
 }
+
+//ログイン画面へ戻る確認ダイアログ
+function backLogin(){
+	event.preventDefault();
+	ret = confirm("ログイン画面へ戻ります。よろしいですか？");
+	if (ret == true){
+		location.href = "login_screen.html";
+	}else{
+		return false;
+	}
+}
