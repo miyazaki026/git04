@@ -61,6 +61,10 @@
     
   </style>
 
+<!--javascriptの関数-->
+<script src="./kakunin_jump.js">
+</script>
+
 </head>
 <body>
   <!-アバター画像->
@@ -135,14 +139,21 @@
 		ここに画像
   	</div>
   </div>
- 
+
   <form action=" ">
+<!-- HEAD:プログラムコードまとめ/アバター作成画面/createAvatar.html.html
 
 	<p><input type="submit" value="確認"></p>
 
+-->
+	<p><input type="submit" value="確認"onClick="kakunin()"></p>
+<!-- test:プログラムコードまとめ/アバター作成画面/createAvatar.html-->
   </form>
 
- 
+<!--jsファイルの関数の利用-->
+ <a href="entrant_mainmenu.html" onClick="kakunin_jump(); return false;" 
+title="メイン画面に移動する際に選択してください。">メイン画面に戻る</a>
+
 </body>
 
 </html>
