@@ -31,12 +31,12 @@
 </head>
 <body>
   <form action="" name="registForm">
-	<p><label>ユーザーID：　　<input type="text" name="userid" size="25"></label></p>
-	<p><label>ユーザー名：　　<input type="text" name="username" size="25"></label></p>
-	<p><label>氏名：　　　　　<input type="text" name="name" size="25"></label></p>
-	<p><label>パスワード：　　<input type="password" name="pass" size="25"></label></p>
-	<p><label>パスワード確認：<input type="password" name="checkpass" size="25"></label></p>
-	<p><label>メールアドレス：<input type="text" name="mail" size="25"></label></p>
+	<p><label>ユーザーID：　　<input type="text" title="登録するユーザーIDを入力してください。必須項目です。" name="userid" size="25"></label></p>
+	<p><label>ユーザー名：　　<input type="text" title="登録するユーザー名を入力してください。必須項目です。" name="username" size="25"></label></p>
+	<p><label>氏名：　　　　　<input type="text" title="氏名を入力してください。必須項目です。" name="name" size="25"></label></p>
+	<p><label>パスワード：　　<input type="password" title="登録するパスワードを入力してください。必須項目です。" name="pass" size="25"></label></p>
+	<p><label>パスワード確認：<input type="password" title="登録するパスワードを再度入力してください。必須項目です。" name="checkpass" size="25"></label></p>
+	<p><label>メールアドレス：<input type="text" title="登録するメールアドレスを入力してください。必須項目です。" name="mail" size="25"></label></p>
 	<p class="check">
 		<input class="submit_button" type="button" value="確認" onClick="check()">　　
 		<input class="submit_button" type="reset" value="リセット" 
@@ -44,7 +44,7 @@
 	</p>
   </form>
 
-  <a href=login_screen.html onClick="backLogin()">ログイン画面へ</a>
+  <a href=login_screen.html title="ログイン画面に移動する時に選択してください。" onClick="backLogin()">ログイン画面へ</a>
 
 </body>
 </html>
