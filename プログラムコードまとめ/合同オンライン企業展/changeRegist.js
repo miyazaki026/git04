@@ -25,3 +25,14 @@ function check(){
 	}
 
 }
+
+//ブース選択確認ダイアログ
+function backMain(){
+	event.preventDefault();
+	ret = confirm("メインメニューへ戻ります。よろしいですか？");
+	if (ret == true){
+		location.href = "entrant_mainmenu.html";
+	}else{
+		return false;
+	}
+}
