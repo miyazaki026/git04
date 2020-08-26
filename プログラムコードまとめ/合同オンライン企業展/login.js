@@ -4,6 +4,7 @@ function check(){
     ret = confirm("ログインに進みます。よろしいですか？");
     if (ret == true){
       window.alert("ログインに進みます。");
+      location.href("entrant_mainmenu.html");
     }else{
       window.alert("ログインできませんでした。");
     }
