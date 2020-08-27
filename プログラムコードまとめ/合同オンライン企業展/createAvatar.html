@@ -30,13 +30,6 @@
 	height: 120px;
 	margin: 5px;
     }
-    .partschange{
-	display: inline-block;
-	background-color:  #ccc;
-	width: 20px;
-	height: 25px;
-	margin: 2px;
-    }
     .gender{
 	background-color:  #ccc;
 	width: 90px;
@@ -57,6 +50,16 @@
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 20px;
+    }
+    button{
+	width: 30px;
+	height: 35px;
+	text-align: center;
+	margin: 5px;
+    }
+    .checkButton{
+	width: 100px;
+	height: 40px;
     }
     
   </style>
@@ -102,30 +105,22 @@
 	
   	<!-部位選択->
   	<div class="partschangeblock">
-		<div class="partschange">
-			画
- 		</div>
- 		<div class="partschange">
-			画
- 		</div>
-		<div class="partschange">
-			画
-  		</div>
-		<div class="partschange">
-			画
-  		</div>
-		<div class="partschange">
-			画
-  		</div>
-		<div class="partschange">
-			画
-  		</div>
-		<div class="partschange">
-			画
-  		</div>
-		<div class="partschange">
-			画
-  		</div>
+		<button>
+			髪
+ 		</button>
+ 		<button>
+			眉
+ 		</button>
+		<button>
+			目
+ 		</button>
+		<button>
+			鼻
+ 		</button>
+		<button>
+			口
+ 		</button>
+		
   </div>
   </div>
 
@@ -141,7 +136,7 @@
   </div>
 
   <form action="">
-	<p><input type="button" value="確認"onClick="kakunin()"></p>
+	<p><input class=" checkButton" type="button" value="確認"onClick="kakunin()"></p>
 <!-- test:プログラムコードまとめ/アバター作成画面/createAvatar.html-->
   </form>
 
