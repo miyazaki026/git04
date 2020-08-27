@@ -1,5 +1,4 @@
 function check(){
-  
   //どちらもkigyouなら企業側ログインページへ
   if(login.username.value == "kigyou" || login.password.value == "kigyou"){
     alert("企業としてログインしました。");
@@ -15,17 +14,11 @@ function check(){
   //それ以外で何か入力されているなら
   else if(!(login.username.value == "" || login.password.value == "")){
     location.href = "loginMiss.html";
-  }else if (!(login.username.value == "" || login.password.value == "")){
-    ret = confirm("ログインに進みます。よろしいですか？");
-    if (ret == true){
-	window.alert("ログインしました。");
-	location.href = "entrant_mainmenu.html";
-    }
-  }else{
-    window.alert("必要項目が入力されていません。");
-    return false;
   }
-
+  else if (!(login.username.value == "" || login.password.value == "")){
+	location.href = "loginMiss.html";
+  }
+  
   //空欄があれば
   else{
     alert("必要項目が入力されていません。");
