@@ -4,53 +4,54 @@
 <title>開催者メイン画面</title>
 <meta charset="UTF-8">
 
-<!--centerはフォーム文の配置、rightはリンクの配置、leftはアバターとユーザー名の配置-->
+<!--CSS-->
 <style>
-body{
-text-align:center;
-margin-top:80px;
-}
-.left{
-  display:inline-block;
-  vertical-align:top;
-}
-.center{
-  display:inline-block;
-  vertical-align:middle;
-}
-.right1{
-  display:inline-block;
-  vertical-align:top;
-  margin-left:350px;
-}
-.right2{
-  display:inline-block;
-  vertical-align:bottom;
-  margin-left:450px;
-  margin-top:15px;
-}
-.button1{
-  width:400px;
-  height:100px;
-  margin-top:30px;
-}
-.button2{
-  width:400px;
-  height:90px;
-  margin-top:5px;
-}
+	body{
+		text-align:center;
+		margin-top:80px;
+	}
+	.left{
+		display:inline-block;
+		vertical-align:top;
+	}
+	.center{
+		display:inline-block;
+		vertical-align:middle;
+	}
+	.right1{
+		display:inline-block;
+		vertical-align:top;
+		margin-left:350px;
+	}
+	.right2{
+		display:inline-block;
+		vertical-align:bottom;
+		margin-left:450px;
+		margin-top:15px;
+	}
+	.button1{
+		width:400px;
+		height:100px;
+		margin-top:30px;
+	}
+	.button2{
+		width:400px;
+		height:90px;
+		margin-top:5px;
+	}
 
-.block{
-background-color: gray;
-width: 70px;
-float: left;
-}
+	.ava{
+		background-color: gray;
+		width: 70px;
+		height: 70px;
+		float: left;
+	}
 
 </style>
 
 <!--javascriptの関数-->
 <script type="text/javascript" src="./logout.js"></script>
-<script src="./Jump_entrant.js"></script>
+<script src="./avatarJumpS.js"></script>
 <script src="./joincheck.js"></script>
 
 </head>
@@ -59,8 +60,8 @@ float: left;
 <!--アバター画像とユーザー名-->
 <div>
   <div class="left">
-    <div class="block">アバタ<br>ー画像</div>
-    <a>ユーザー名</a>
+    <a href=""><div class="ava" title="アバター編集画面に移動する時に選択してください" onClick="avatar()">アバター画像</div></a>
+    ユーザー名
   </div>
   <div class="right1">
     <a href="logout_screen.html" onClick="check(); return false;"

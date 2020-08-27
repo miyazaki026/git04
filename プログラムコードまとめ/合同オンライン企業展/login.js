@@ -1,12 +1,12 @@
 function check(){
   //どちらもkigyouなら企業側ログインページへ
-  if(login.username.value == "kigyou" || login.password.value == "kigyou"){
+  if(login.username.value == "kigyou" && login.password.value == "kigyou"){
     alert("企業としてログインしました。");
     location.href = "organizer_mainmenu.html";
   }
 
   //どちらもsannkaなら参加者側ログインページへ
-  else if(login.username.value == "sannka" || login.password.value == "sannka"){
+  else if(login.username.value == "sannka" && login.password.value == "sannka"){
     alert("参加者としてログインしました。");
     location.href = "entrant_mainmenu.html";
   }
@@ -14,9 +14,6 @@ function check(){
   //それ以外で何か入力されているなら
   else if(!(login.username.value == "" || login.password.value == "")){
     location.href = "loginMiss.html";
-  }
-  else if (!(login.username.value == "" || login.password.value == "")){
-	location.href = "loginMiss.html";
   }
   
   //空欄があれば
