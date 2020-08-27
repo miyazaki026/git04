@@ -6,3 +6,4 @@ function Jump(){
     location.href("entrant_mainmenu.html");
   }
 }
+
