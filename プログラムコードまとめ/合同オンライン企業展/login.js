@@ -3,11 +3,11 @@ function check(){
   if (!(login.username.value == "" || login.password.value == "")){
     ret = confirm("ログインに進みます。よろしいですか？");
     if (ret == true){
-	alert("ログインしました。");
+	window.alert("ログインしました。");
 	location.href = "entrant_mainmenu.html";
     }
   }else{
-    alert("必要項目が入力されていません。");
+    window.alert("必要項目が入力されていません。");
     return false;
   }
 }
@@ -16,7 +16,7 @@ function check(){
 function newcheck(){
   ret = confirm("新規登録を行いますか？");
   if (ret == true){
-    alert("アカウント登録画面に移動します。");
+    window.alert("アカウント登録画面に移動します。");
     location.href("accountRegist.html");
   }
 }
@@ -25,6 +25,7 @@ function newcheck(){
 function passcheck(){
   ret = confirm("パスワードを確認しますか？");
   if (ret == true){
-    alert("パスワード再設定画面に移動します。");
+    window.alert("パスワード画面に移動します。");
+    location.href("pass_setting.html");
   }
 }
