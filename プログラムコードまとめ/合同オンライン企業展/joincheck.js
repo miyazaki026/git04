@@ -14,13 +14,7 @@ function uploadjoincheck(){
   ret = confirm("動画アップロード画面に移動します。よろしいですか？");
   if (ret == true){
     window.alert("動画アップロード画面に移動しました。");
-  }
-}
-
-function musicjoincheck(){
-  ret = confirm("音声機器設定画面に移動します。よろしいですか？");
-  if (ret == true){
-    window.alert("音声機器設定画面に移動しました。");
+    location.href("upload_video_screen.html");
   }
 }
 
