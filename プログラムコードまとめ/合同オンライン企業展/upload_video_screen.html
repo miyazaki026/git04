@@ -3,61 +3,66 @@
 <center>
 <head>
 <title>
-動画アップロード画面画面
+動画アップロード画面
 </title>
+
+<!--CSS-->
+<style>
+	body{
+		text-align: center;
+		margin-top: 100px;
+	}
+	.box{
+		width: 500px;
+		height: 200px;
+		border: 1px solid #000000;
+		text-align: left;
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	.chooseBox{
+		display: inline-block;
+		border: 1px solid #000000;
+		margin: 10px 0px;
+	}
+	a{
+		margin-left: 500px;
+	}
+</style>
+
+<!--JavaScript-->
+
 <script src="./upload_video.js"></script>
 <script src="./Jump_entrant.js"></script>
 
 </head>
 
 <body>
-<center>
-<p>
-説明会で流せる動画をアップロードすることができます
-</p>
-<p>
-※動画が選択されていません
-</p>
-<p>
-<select name=""size="5" multiple size="60" >
-<option value="アップされている動画1.mp4">
+
+<h3>説明会で流せる動画をアップロードすることができます</h3>
+
+<div class="box">
+アップされている動画.mp4<br>
 アップされている動画.mp4
-</option>
-<option value="アップされている動画2.mp4">
-アップされている動画.mp4
-</option>
-<option value="">
-</option>
-<option value="">
-</option>
-<option value="">
-</option>
-</select>
-</p>
+</div>
 
-<p>
-&uarr;
-</p>
-<p>
-<form action="#" name="video">
- <input type="file" name= "file" size="30">
- </form>
-</p>
+<p>&uarr;</p>
 
-<p>
-<button type="submit" onClick="upload_check(); return false;" >
-アップロード
-</button>
-</p>
-</center>
+<div class="chooseBox">
+	<form action="#" name="video">
+		<input type="file" name= "file" size="30">
+	</form>
+</div>
 
-<p>
-<div align="right"> 
+<br>
+
+<button type="button" onClick="upload_check(); return false;" >アップロード</button>
+
+<br>
+
 <a href="organizer_mainmenu.html"  title="メインメニューへ戻る時に選択してください。" onClick="Jump(); return false;">
 メインメニューへ
 </a>
-</div>
-</p>
 
 </body>
 </html>
