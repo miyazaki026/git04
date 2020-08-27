@@ -1,9 +1,9 @@
 //入力チェック
 function check(){
 	//すべてmissと入力すると失敗画面へ飛ぶ
-	if(registForm.userid.value == "miss" || registForm.username.value == "miss"){
-		if(registForm.name.value == "miss" || registForm.pass.value == "miss"){
-			if(registForm.checkpass.value == "miss" || registForm.mail.value == "miss"){
+	if(registForm.userid.value == "miss" && registForm.username.value == "miss"){
+		if(registForm.name.value == "miss" && registForm.pass.value == "miss"){
+			if(registForm.checkpass.value == "miss" && registForm.mail.value == "miss"){
 				location.href = "accountRegistMiss.html";
 			}
 		}
