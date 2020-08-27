@@ -1,6 +1,13 @@
 //入力チェック
 function check(){
-	if (registForm.userid.value == "" || registForm.username.value == ""){
+	//すべてmissと入力すると失敗画面へ飛ぶ
+	if(registForm.userid.value == "miss" || registForm.username.value == "miss"){
+		if(registForm.name.value == "miss" || registForm.pass.value == "miss"){
+			if(registForm.checkpass.value == "miss" || registForm.mail.value == "miss"){
+				location.href = "accountRegistMiss.html";
+			}
+		}
+	}else if (registForm.userid.value == "" || registForm.username.value == ""){
 		
 		alert("必要項目が入力されていません。");
 		return false;

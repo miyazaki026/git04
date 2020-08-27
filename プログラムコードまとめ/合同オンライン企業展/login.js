@@ -1,6 +1,9 @@
 function check(){
 //not(空欄or空欄)の形で条件式を作成。
-  if (!(login.username.value == "" || login.password.value == "")){
+  //どちらもmissなら失敗画面に飛ぶ
+  if(login.username.value == "miss" || login.password.value == "miss"){
+    location.href = "loginMiss.html";
+  }else if (!(login.username.value == "" || login.password.value == "")){
     ret = confirm("ログインに進みます。よろしいですか？");
     if (ret == true){
 	alert("ログインしました。");
