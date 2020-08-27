@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アバター変更画面</title>
+
+  <!--CSS-->
+
+  <style>
+    p{
+	text-align: center;
+	margin-left: 540px;
+     }
+    body{
+	margin-top: 100px;
+	text-align: center;
+        }
+    .avatar{
+	display: inline-block;
+	background-color:  #ccc;
+	width: 140px;
+	height: 200px;
+	margin: 10px;
+	vertical-align: top;
+    }
+    .parts{
+	display: inline-block;
+	background-color:  #ccc;
+	width: 100px;
+	height: 120px;
+	margin: 5px;
+    }
+    .gender{
+	background-color:  #ccc;
+	width: 90px;
+	height: 90px;
+	
+    }
+ 
+    .partsblock{
+	display: inline-block;
+	vertical-align: top;
+	text-align; left;
+    }
+　　.partschangeblock{
+	display: inline-block;
+	margin: 100px;
+    }
+    .genderblock{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+    }
+    button{
+	width: 30px;
+	height: 35px;
+	text-align: center;
+	margin: 5px;
+    }
+    .checkButton{
+        width:70px;
+        height:35px;
+        margin-top:300px;
+    }
+    
+  </style>
+
+<!--javascriptの関数-->
+<script src="./Jump_entrant.js">
+</script>
+
+</head>
+<body>
+  <!-アバター画像->
+  <div class="avatar">
+	<img src= "avatar1.jpg" width="140" height="200" alt="画像">
+  </div>
+  
+  <!-パーツ選択画像->
+
+  <div class="partsblock">
+ 	 <div class="parts">
+		<img src= "avatar2.jpg" width="100" height="120" alt="画像">
+ 	 </div>
+ 	 <div class="parts">
+		<img src= "avatar3.jpg" width="100" height="120" alt="画像">
+ 	 </div>
+	 <div class="parts">
+		<img src= "avatar4.jpg" width="100" height="120" alt="画像">
+  	 </div>
+	
+  	 <br>
+
+	 <div class="parts">
+		<img src= "avatar5.jpg" width="100" height="120" alt="画像">
+ 	 </div>
+ 	 <div class="parts">
+		<img src= "avatar6.jpg" width="100" height="120" alt="画像">
+ 	 </div>
+	 <div class="parts">
+		<img src= "avatar7.jpg" width="100" height="120" alt="画像">
+  	 </div>
+
+	 <br>
+ 
+	
+  	<!-部位選択->
+  	<div class="partschangeblock">
+		<button>
+			髪
+ 		</button>
+ 		<button>
+			眉
+ 		</button>
+		<button>
+			目
+ 		</button>
+		<button>
+			鼻
+ 		</button>
+		<button>
+			口
+ 		</button>
+		
+  </div>
+  </div>
+
+  <!-男女選択->
+  <div class="genderblock">
+　	<div class="gender">
+		<img src= "avatar8.jpg" width="90" height="90" alt="画像">
+ 	</div>
+ 	<br>
+	<div class="gender">
+		<img src= "avatar9.jpg" width="90" height="90" alt="画像">
+  	</div>
+  </div>
+
+	<a href="organizer_mainmenu.html"><button class="checkButton" type="button" onClick="Jump(); return false;">確認</button></a>
+<!-- test:プログラムコードまとめ/アバター作成画面/createAvatar.html-->
+
+
+</body>
+
+</html>
