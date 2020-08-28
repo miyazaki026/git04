@@ -27,7 +27,6 @@ function check(){
 function newcheck(){
   ret = confirm("新規登録を行いますか？");
   if (ret == true){
-    window.alert("アカウント登録画面に移動します。");
     location.href("accountRegist.html");
   }
 }
@@ -36,7 +35,6 @@ function newcheck(){
 function passcheck(){
   ret = confirm("パスワードを確認しますか？");
   if (ret == true){
-    window.alert("パスワード画面に移動します。");
     location.href("pass_setting.html");
   }
 }

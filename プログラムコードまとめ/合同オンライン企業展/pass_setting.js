@@ -14,7 +14,6 @@ function sending(){
         window.alert("メールアドレスをもう一度確認して、再度送信してください。");
       }        
     }else{
-      window.alert("送信を取りやめました");
       return false;
     }
   }
